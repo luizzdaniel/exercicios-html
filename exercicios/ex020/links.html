@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        a {
+            color: red;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:visited {
+            color: darkred;
+        }
+
+        a:hover {
+            color: black;
+            text-decoration: underline;
+        }
+
+        a:active {
+            color: yellow;
+        }
+
+        a::after {
+            content: ' [link]';
+            text-decoration: none;
+            font-weight: normal;
+            color: darkgray;
+        }
+        
+        .importante::after {
+            content: ' ⮈';
+        }
+         
+        .importante::before {
+            content: '⮊';
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando Links</h1>
+    <ul>
+        <li><a href="https://www.youtube.com/@danicraft5388"b target="_blank" rel="external">Canal do Youtube</a></li>
+        <li class="importante"><a href="https://www.instagram.com/luiz_daniel3" target="_blank" rel="external"> Instagram</a></li>
+    </ul>
+</body>
+</html>

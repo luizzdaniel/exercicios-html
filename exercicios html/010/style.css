@@ -1,0 +1,12 @@
+@charset "UTF-8";
+div {
+    margin: 30px;
+    max-width: 250px;
+    filter: grayscale(100px);
+   text-align: center;
+}
+
+div:hover {
+    filter: grayscale(0);
+    margin: 10px;
+}

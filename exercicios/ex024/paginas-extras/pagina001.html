@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            width: 500px;
+            border-collapse: collapse;
+            position: relative;
+        }
+
+        thead {
+            background-color: rgb(70, 69, 69);
+        }
+
+        thead > tr > th {
+            position: sticky;
+            top: -0.1%;
+            background-color:  rgb(70, 69, 69);
+        }
+
+        td, th {
+            
+            border: 1px solid black;
+            padding: 5px;
+        }
+
+        .pop {
+            width: 50px;
+        }
+        
+        caption {
+            font-size: 1.5em;
+            font-weight: bolder;
+            padding: 10px;
+            background-color: lightgray;
+        }
+
+        tbody > tr:nth-child(2n) {
+            background-color: rgb(182, 180, 180);
+        }
+
+        .num {
+            text-align: right;
+            padding-right: 15px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Uso de tabela grandes</h1>
+    <!--
+        ANATOMIA PARA TABELAS GRANDES 
+        TABLE
+            CAPTION
+            THEAD
+                 TR, TD, TH
+            TBODY
+                 TR, TD, TH
+            TFOOT
+                 TR, TD, TH
+    -->
+    <table>
+        <caption>População das Unidades Federativas</caption>
+        <thead>
+            <tr>
+                <th scope="col">Município</th>
+                <th scope="col" class="pop">População</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Aracaju</td>
+                <td class="num">602 757</td>
+            </tr>
+            <tr>
+                <td>Nossa Senhora do Socorro</td>
+                <td class="num">192 330</td>
+            </tr>
+            <tr>
+                <td>Itabaiana</td>
+                <td class="num">103 439
+                </td>
+            </tr>
+            <tr>
+                <td>Lagarto</td>
+                <td class="num">101 579
+                </td>
+            </tr>
+            <tr>
+                <td>São Cristóvão</td>
+                <td class="num">95 612</td>
+            </tr>
+            <tr>
+                <td>Estância</td>
+                <td class="num">65 078
+                </td>
+            </tr>
+            <tr>
+                <td>Tobias Barreto</td>
+                <td class="num">50 905
+                </td>
+            </tr>
+            <tr>
+                <td>Simão Dias</td>	
+                <td class="num">42 578</td>
+            </tr>
+            <tr>
+            <td> Barra dos Coqueiros</td>
+            <td  class="num">41 511
+            </td>
+            <tr>
+                <td>Nossa Senhora da Glória</td>
+                <td class="num">41 202
+                </td>
+            </tr>
+            <tr>
+                <td>Itabaianinha</td>
+                <td class="num">40 678</td>
+            </tr>
+            <tr>
+                <td> Itaporanga d'Ajuda</td>
+                <td class="num">34 411
+                </td>
+            </tr>
+            <tr>
+                <td>Poço Redondo</td>
+                <td class="num">33 439</td>
+            </tr>
+            <tr>
+                <td>Capela</td>
+                <td class="num">31 645</td>
+            </tr>
+            <tr>
+                <td>Canindé de São Francisco</td>
+                <td class="num">26 834</td>
+            </tr>
+            <tr>
+                <td>Propriá</td>
+                <td class="num">26 618</td>
+            </tr>
+            <tr>
+                <td>Porto da Folha</td>
+                <td class="num">26 576</td>
+            </tr>
+            <tr>
+                <td>Nossa Senhora das Dores</td>
+                <td class="num">24 996</td>
+            </tr>
+            <tr>
+                <td>Boquim</td>
+                <td class="num">24 638</td>
+            </tr>
+            <tr>
+                <td>Laranjeiras</td>
+                <td class="num">23 975</td>
+            </tr>
+            <tr>
+                <td>Umbaúba</td>
+                <td class="num">23 917</td>
+            </tr>
+            <tr>
+                <td>Poço Verde</td>
+                <td class="num">21 794</td>
+            </tr>
+            <tr>
+                <td>Salgado</td>
+                <td class="num">20 279</td>
+            </tr>
+            <tr>
+                <td>Aquidabã</td>
+                <td class="num">20 131</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <th scope="row">Total de Habitantes</th>
+            <td class="num"><strong>0000</strong></td>
+        </tfoot>
+    </table>      
+</body>
+</html>

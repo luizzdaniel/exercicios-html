@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagem e Audio</title>
+</head>
+<body>
+    <h1>Imagem flexível</h1>
+    <p>imagem</p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagem/oculos-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagem/oculos-m.png" type="image/png">
+        <img src="imagem/oculos-g.png" alt="imagem flexível">
+    </picture>
+    <p>audio disponivel</p>
+    <audio preload="metadata" controls>
+       <source src="audio/01 - SENTA NO CAVALINHO DE PAU.mp3" type="audio/mpeg">
+        <source src="audio/01 - SENTA NO CAVALINHO DE PAU.ogg" type="audio/ogg">
+        <source src="audio/01 - SENTA NO CAVALINHO DE PAU.wav" type="audio/wav">
+    </audio>
+    
+</body>
+</html>
